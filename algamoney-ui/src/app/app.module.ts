@@ -7,10 +7,12 @@ import { ButtonModule } from 'primeng/components/button/button';
 import { DataTableModule } from 'primeng/components/datatable/datatable';
 
 import { AppComponent } from './app.component';
+import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LancamentosPesquisaComponent
   ],
   imports: [
     BrowserModule,
