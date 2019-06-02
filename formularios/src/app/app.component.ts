@@ -8,6 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
 
+  profissoes = ['Engenheiro', 'Dentista', 'Outra'];
+
   salvar(form: NgForm) {
     console.log(form);
   }
