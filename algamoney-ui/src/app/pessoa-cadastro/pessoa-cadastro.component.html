@@ -1,5 +1,5 @@
 <div class="container">
-  <form>
+  <form autocomplete="off">
 
     <div class="ui-g">
       <div class="ui-g-12">
@@ -21,19 +21,19 @@
         <input pInputText type="text">
       </div>
 
-      <div class="ui-g-12 ui-md-3 ui-fluid">
+      <div class="ui-g-12 ui-md-4 ui-fluid">
         <label>Complemento</label>
         <input pInputText type="text">
       </div>
 
-      <div class="ui-g-12 ui-md-3 ui-fluid">
+      <div class="ui-g-12 ui-md-4 ui-fluid">
         <label>Bairro</label>
         <input pInputText type="text">
       </div>
 
-      <div class="ui-g-12 ui-md-3 ui-fluid">
+      <div class="ui-g-12 ui-md-4 ui-fluid">
         <label>CEP</label>
-        <input pInputText type="text">
+        <p-inputMask mask="99.999-999"></p-inputMask>
       </div>
 
       <div class="ui-g-12 ui-md-6 ui-fluid">
@@ -49,9 +49,11 @@
       <div class="ui-g-12">
         <button pButton type="submit" label="Salvar"></button>
         <button pButton type="button" label="Novo" class="ui-button-info"></button>
+
         <a href="javascript:;">Voltar para a pesquisa</a>
       </div>
     </div>
 
   </form>
+
 </div>
