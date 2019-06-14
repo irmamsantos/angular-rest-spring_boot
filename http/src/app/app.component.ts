@@ -1,5 +1,6 @@
-import { CidadeService } from './cidade.service';
 import { Component, OnInit } from '@angular/core';
+
+import { CidadeService } from './cidade.service';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,10 @@ export class AppComponent implements OnInit {
   constructor(private cidadeService: CidadeService) {}
 
   ngOnInit() {
+    this.consultar();
+  }
+
+  consultar() {
     this.cidadeService.consultar()
       .then(dados => {
         this.cidades = dados;
@@ -20,7 +25,11 @@ export class AppComponent implements OnInit {
   }
 
   adicionar(nome: string) {
-    alert(nome);
+    this.cidadeService.adicionar({ nome })
+      .then(cidade => {
+        alert(`Cidade "${cidade.nome}" adicionada com código ${cidade.id}!`);
+        this.consultar();
+      });
   }
 
   excluir(id: number) {
