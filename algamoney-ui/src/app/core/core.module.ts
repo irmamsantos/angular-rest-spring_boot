@@ -1,3 +1,4 @@
+import { CategoriaService } from './../categorias/categoria.service';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -26,6 +27,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   providers: [
     LancamentoService,
     PessoaService,
+    CategoriaService,
     ErrorHandlerService,
 
     ConfirmationService,
