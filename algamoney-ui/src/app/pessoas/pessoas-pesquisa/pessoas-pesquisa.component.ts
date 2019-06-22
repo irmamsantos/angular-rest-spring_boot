@@ -3,6 +3,7 @@ import { LazyLoadEvent, ConfirmationService } from 'primeng/components/common/ap
 import { PessoaFiltro, PessoaService } from './../pessoa.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ToastyService } from 'ng2-toasty';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pessoas-pesquisa',
@@ -20,10 +21,12 @@ export class PessoasPesquisaComponent implements OnInit {
     private pessoaService: PessoaService,
     private errorHandler: ErrorHandlerService,
     private toasty: ToastyService,
-    private confirmation: ConfirmationService
+    private confirmation: ConfirmationService,
+    private title: Title
   ) { }
 
   ngOnInit() {
+    this.title.setTitle('Pesquisa de pessoas');
   }
 
   pesquisar(pagina = 0) {

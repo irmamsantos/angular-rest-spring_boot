@@ -1,3 +1,4 @@
+import { PessoasRoutingModule } from './pessoas-routing.module';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -23,7 +24,9 @@ import { SharedModule } from 'app/shared/shared.module';
     TooltipModule,
     InputMaskModule,
 
-    SharedModule
+    SharedModule,
+    PessoasRoutingModule
+
   ],
   declarations: [
     PessoaCadastroComponent,
