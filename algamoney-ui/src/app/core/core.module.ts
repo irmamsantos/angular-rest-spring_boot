@@ -1,3 +1,4 @@
+import { AuthService } from './../seguranca/auth.service';
 import { RouterModule } from '@angular/router';
 import { CategoriaService } from './../categorias/categoria.service';
 import { NgModule, LOCALE_ID } from '@angular/core';
@@ -32,6 +33,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     PessoaService,
     CategoriaService,
     ErrorHandlerService,
+    AuthService,
 
     ConfirmationService,
     { provide: LOCALE_ID, useValue: 'pt-BR' }
