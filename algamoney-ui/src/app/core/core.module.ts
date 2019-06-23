@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { ConfirmationService } from 'primeng/components/common/api';
 import { ConfirmDialogModule } from 'primeng/components/confirmdialog/confirmdialog';
 import { ToastyModule } from 'ng2-toasty';
+import { JwtHelper } from 'angular2-jwt';
 
 import { ErrorHandlerService } from './error-handler.service';
 import { PessoaService } from './../pessoas/pessoa.service';
@@ -36,6 +37,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     AuthService,
 
     ConfirmationService,
+    JwtHelper,
     { provide: LOCALE_ID, useValue: 'pt-BR' }
   ]
 })
